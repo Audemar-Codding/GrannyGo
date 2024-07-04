@@ -1,0 +1,27 @@
+:root {
+    --lightBlue: #CBF1F5;
+    --normalBlue: #A6E3E9;
+    --darkBlue: #069AA3;
+    --lineBlue: #71C9CE;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+
+body {
+    font-family: "Gluten", sans-serif;
+    color:var(--primary);
+    background:white;
+}
+
+h1,h2,h3,h4,h5 {font-weight:normal;}
+
+a, img {display:block;}
+a { text-decoration: none; color:var(--primary);}
+
+html { scroll-behavior: smooth; }

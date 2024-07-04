@@ -1,0 +1,227 @@
+main {
+    
+    /*========= INTRO ==========*/
+    
+    .intro
+    {
+        
+        display:flex;
+        flex-direction:column;
+ 
+ margin:8rem 0;
+ 
+ 
+    .titleh1{
+    margin:auto;
+    text-align:center;
+    
+    position: relative;
+    
+    h1{font-size:3rem;}
+    span{color:var(--darkBlue);font-size:3rem;}
+    
+    
+    img{
+        position:absolute;
+        bottom:7px;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        
+    }
+    }
+    
+        
+    
+    
+    div + img 
+    {
+    width: 450px;
+    margin: 4rem auto 3rem auto;
+    }
+    
+    
+    >a{
+        width:40%;
+        margin:auto;
+        text-align:center;
+
+        font-size: 2.5rem;
+        
+        i{
+          transform: translateY(60%);
+      
+            font-size: 2.5rem;
+            
+             animation: bounce 0.75s infinite alternate;
+         }
+    }
+    
+    
+        
+    }
+    
+    
+    
+        /*========= EXPLANATION ==========*/
+    
+    .explanation 
+    {
+        width: 90%;
+        margin: 15rem auto;
+    h2{
+        text-align:center;
+         font-size: 3rem;
+    } 
+    
+    span{display:inline-block;font-size: 3rem;}
+    
+    .slashText,.seText {font-size: 3rem;}
+    
+    .seText {
+        transform:rotate(25deg) translateY(50%);
+    }
+    
+    ul{
+        width:fit-content;
+        margin: 5rem auto;
+        list-style: inside;
+        
+        li{
+            margin-top: 2.5rem;
+        color: var(--darkBlue);
+        display:flex;
+        align-items:center;
+        gap: 2.5rem;
+    
+        p{font-size: 2.5rem;}
+        
+    img{width: 140px;}
+    
+    i{color:black;font-size: 3rem;}
+    small{font-size:2rem;}
+    
+    &::before {content: ".";font-size: 2.5rem;}
+    
+    &:nth-child(2)  i:last-child {
+       font-size: 3.5rem;
+       color:var(--darkBlue);
+       transform:rotate(180deg);
+    }
+    
+    &:last-child div div p {font-size:3rem;}
+ 
+    }
+    
+        
+    }
+    
+    }
+    
+     /*========= SOMELOGOS ==========*/
+    
+    .someLogos {
+        
+        margin-bottom: 16rem;
+        
+        h2{
+        font-size: 3rem;
+        text-align:center;
+        padding-top:4rem;
+        }
+    
+    >div 
+     {
+        width:100%;
+        display:flex;
+    justify-content: space-evenly;
+        align-items:center;
+    flex-wrap:wrap;
+    margin: 5rem 0;
+    row-gap: 2rem;
+        
+        .logoCard{
+        width:406px;
+        height:405px;
+        padding: 0.75rem;
+        
+        position:relative;
+        
+        background: var(--normalBlue);
+        
+        border-radius: 15px;
+        filter: drop-shadow(0 7px 0 #64888c);
+        
+          &:hover {
+             filter: drop-shadow(0 3px 0 #64888c);
+             transform: translateY(2px);
+        }
+        
+        .logoSquare {
+         
+         height: 75%;
+         display:flex;
+         align-items:center;
+         justify-content:center;
+         
+         background: var(--lightBlue);
+         border: 2px solid var(--lineBlue);
+         
+         img{height: 90%;}
+     }
+        
+    .logoName {
+        margin-top: 1rem;
+        font-size:1.75rem;
+    }    
+        
+    .artistName, .logoPrice { position:absolute;bottom:0.75rem;}
+    
+    .artistName {font-size:1.25rem;left:0.75rem;}
+    .logoPrice {font-size:2rem;right:0.75rem;line-height:0.75rem;}    
+        
+       }
+        
+     }
+        
+        
+        >a{
+            margin:auto;
+            width: fit-content !important;
+            background: var(--normalBlue);
+                    border-radius: 5rem;
+        filter: drop-shadow(0 7px 0 #64888c);
+            
+            font-size: 2.25rem;
+            padding: 2rem 4.5rem;
+            
+            &:hover {
+             filter: drop-shadow(0 3px 0 #64888c);
+             transform: translateY(2px);
+        }
+        
+        &:active {
+             filter: none ;
+             border: 3px solid #64888c;
+             filter: drop-shadow(0 0 6px black);
+             transform: scale(0.9) translateY(2px);
+             margin-bottom: -0.4rem;
+        }
+        
+        
+        }
+        
+        
+    }
+     
+    
+    
+    
+}
+
+
+
+/*===== ANIMATIONS =====*/
+@keyframes bounce {
+  from {transform: translateY(60%);}
+  to {transform: translateY(100%);}
+}

@@ -78,7 +78,7 @@ main {
     .slashText,.seText {font-size: 3rem;}
     
     .seText {
-        transform:rotate(25deg) translateY(50%);
+        transform:rotate(25deg) translateY(35%);
     }
     
     ul{
